@@ -69,7 +69,7 @@ for step in range(600):
         accuracy_ = sess.run(accuracy, {tf_x: test_x, tf_y: test_y})
         print('train loss: %.4f' % loss_, '| test accuracy: %.2f' % accuracy_)
 
-# print 10 predictions from test data
+# print 10 predictions from test data11111111
 test_output = sess.run(output, {tf_x: test_x[:10]})
 pred_y = np.argmax(test_output, 1)
 print(pred_y, 'prediction number')
